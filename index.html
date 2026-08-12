@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beetle the Fairy · Keeper of the Hidden Grove</title>
+<meta name="description" content="Beetle the Fairy — a whimsical storybook character at the Minnesota Renaissance Festival. Meet Beetle, join the Magic Seed story, and book her for your event.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <img class="hero__bg" src="assets/beetle-wings.jpg" alt="Beetle the Fairy among ferns and wings">
+  <div class="hero__overlay"></div>
+  <div class="hero__dots">
+    <span class="hero__dot" style="opacity:.9"></span>
+    <span class="hero__dot" style="opacity:.5"></span>
+    <span class="hero__dot" style="opacity:.5"></span>
+  </div>
+
+  <div class="butterfly" data-butterfly="1" style="top:120px; left:38%; font-size:30px;">
+    <span class="butterfly__inner" style="transform:rotate(-10deg); animation:flutter 7.5s ease-in-out infinite .3s;">🦋</span>
+  </div>
+  <div class="butterfly" data-butterfly="2" style="top:100px; right:16%; font-size:26px;">
+    <span class="butterfly__inner" style="transform:rotate(12deg); animation:flutter 8.2s ease-in-out infinite .8s;">🦋</span>
+  </div>
+
+  <div class="hero__text">
+    <div class="hero__title">Beetle the Fairy</div>
+    <div class="hero__subtitle">Keeper of the Hidden Grove</div>
+  </div>
+</section>
+
+<div class="divider">
+  <span>🌿</span>&nbsp; wander deeper into the grove &nbsp;<span>🌿</span>
+</div>
+
+<section class="story">
+  <div class="story__left">
+    <div class="eyebrow eyebrow--orange">✦ Her Story</div>
+    <div class="story__quote">"I was not born of stars, nor the wind's laughter, but from the very heartbeat of Mother Earth."</div>
+    <p class="story__body">Long ago, beneath a full moon's silver glow, a pulse of Earth's magic rippled through the soil of a hidden grove. From it, a tiny seedling unfurled — and I took shape. Ever since, I've wandered ferns and ivy, waking sleepy blossoms and listening to what the old trees have to say.</p>
+    <a href="origin.html" class="link-underline">Read the full origin tale &rarr;</a>
+  </div>
+  <div class="story__right">
+    <img class="story__img" src="assets/beetle-story.jpg" alt="Beetle the Fairy in profile among the ferns">
+    <div class="story__badge">giggle spot!</div>
+  </div>
+</section>
+
+<section class="seed">
+  <div class="seed__left">
+    <div class="eyebrow eyebrow--gold">✦ A Story You Can Join</div>
+    <h2 class="seed__heading">The Magic Seed</h2>
+    <p class="seed__body">I spend my days gathering the special ingredients a magic seed needs to grow — and I need helpers. As I tell the tale, you'll collect ingredients right alongside me. By the end, everyone leaves with a real seed of their own to plant. What will it grow into? That's part of the magic.</p>
+    <a href="#booking" class="pill pill--cream">Bring this story to your event</a>
+  </div>
+  <div class="seed__right">
+    <img class="seed__img" src="assets/beetle-side.jpg" alt="Beetle the Fairy telling the Magic Seed story">
+    <div class="seed__icon">🌱</div>
+  </div>
+</section>
+
+<section class="blessing">
+  <div class="blessing__quote-mark">&ldquo;</div>
+  <div class="blessing__sparkle">✦</div>
+  <div class="blessing__text">"May you grow strong like the ivy and bloom where you're planted — may your spirit dance like the leaves, and your dreams fly far on the breeze."</div>
+  <div class="blessing__attribution">— A Fairy Blessing</div>
+</section>
+
+<section class="gallery">
+  <div class="eyebrow eyebrow--orange" style="text-align:center;">✦ Glimpses of the Grove</div>
+  <h2 class="gallery__heading">Gallery</h2>
+  <div class="gallery__grid">
+    <button type="button" class="gallery__item gallery__item--a" data-lightbox-trigger>
+      <img class="gallery__img" src="assets/beetle-fullbody.jpg" alt="Beetle the Fairy, full costume">
+    </button>
+    <button type="button" class="gallery__item gallery__item--b" data-lightbox-trigger>
+      <img class="gallery__img" src="assets/beetle-elsa.jpg" alt="Beetle the Fairy with a young guest">
+    </button>
+    <button type="button" class="gallery__item gallery__item--c" data-lightbox-trigger>
+      <img class="gallery__img" src="assets/beetle-profile.jpg" alt="Beetle the Fairy, profile portrait">
+    </button>
+    <button type="button" class="gallery__item gallery__item--d" data-lightbox-trigger>
+      <img class="gallery__img" src="assets/beetle-side2.jpg" alt="Beetle the Fairy among the trees">
+    </button>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" hidden>
+  <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+  <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">&larr;</button>
+  <img class="lightbox__img" id="lightbox-img" src="" alt="">
+  <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">&rarr;</button>
+</div>
+
+<section class="find">
+  <div class="find__left">
+    <div class="eyebrow eyebrow--orange">✦ Find Beetle</div>
+    <div class="find__list">
+      <div class="find__row">
+        <span class="find__label">MN Renaissance Festival</span>
+        <span class="find__value">Weekends, Aug – Oct</span>
+      </div>
+      <div class="find__row">
+        <span class="find__label">Community &amp; library events</span>
+        <span class="find__value">By booking, year-round</span>
+      </div>
+      <div class="find__row find__row--last">
+        <span class="find__label">More appearances</span>
+        <span class="find__value">Announced on socials</span>
+      </div>
+    </div>
+  </div>
+  <div class="booking" id="booking">
+    <div class="butterfly" data-butterfly="3" style="top:-18px; right:14px; font-size:34px;">
+      <span class="butterfly__inner" style="transform:rotate(14deg); animation:flutter 7.8s ease-in-out infinite;">🦋</span>
+    </div>
+    <div class="booking__heading">Invite Beetle to Your Event</div>
+    <p class="booking__body">Festivals, libraries, birthdays, and community days — Beetle brings the Magic Seed story and fairy-blessing wishes wherever curious hearts gather.</p>
+    <a href="#" id="booking-cta" class="pill pill--orange">Send a booking note</a>
+  </div>
+</section>
+
+<section class="social">
+  <div class="eyebrow eyebrow--orange" style="text-align:center;">✦ Follow the Fluttering</div>
+  <div class="social__grid">
+    <a href="#" id="social-instagram" class="social__card">
+      <img src="assets/beetle-social-instagram.jpg" alt="Beetle the Fairy on Instagram">
+      <div class="social__info">
+        <div class="social__platform">Instagram</div>
+        <div class="social__handle" id="social-instagram-handle"></div>
+      </div>
+    </a>
+    <a href="#" id="social-tiktok" class="social__card">
+      <img src="assets/beetle-social-tiktok.jpg" alt="Beetle the Fairy on TikTok">
+      <div class="social__info">
+        <div class="social__platform">TikTok</div>
+        <div class="social__handle" id="social-tiktok-handle"></div>
+      </div>
+    </a>
+    <a href="#" id="social-facebook" class="social__card">
+      <img src="assets/beetle-social-facebook.jpg" alt="Beetle the Fairy on Facebook">
+      <div class="social__info">
+        <div class="social__platform">Facebook</div>
+        <div class="social__handle" id="social-facebook-handle"></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">Beetle the Fairy &middot; Minnesota Renaissance Festival &middot; © 2026</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
