@@ -135,21 +135,6 @@ img { display: block; max-width: 100%; }
   inset: 0;
   background: linear-gradient(180deg, rgba(20,15,5,.15) 0%, rgba(20,15,5,.05) 40%, rgba(20,15,5,.75) 100%);
 }
-.hero__dots {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-}
-.hero__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--cream);
-}
 .hero__text {
   position: absolute;
   bottom: 52px;
@@ -204,7 +189,7 @@ img { display: block; max-width: 100%; }
   color: var(--muted-1);
   margin-top: 22px;
 }
-.story__right { position: relative; overflow: hidden; }
+.story__right { position: relative; overflow: hidden; border-radius: 8px 0 0 8px; }
 .story__img {
   width: 100%;
   height: 560px;
@@ -246,7 +231,15 @@ img { display: block; max-width: 100%; }
 .seed__body { font-size: 16.5px; line-height: 1.8; opacity: .92; margin: 0; }
 .seed__left .pill { margin-top: 22px; }
 .seed__right { position: relative; }
-.seed__img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }
+.seed__imgwrap { overflow: hidden; border-radius: 8px; }
+.seed__img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  transition: transform .5s ease;
+}
+.seed__imgwrap:hover .seed__img { transform: scale(1.04) rotate(-1deg); }
 .seed__icon {
   position: absolute;
   top: -14px;
@@ -519,8 +512,8 @@ img { display: block; max-width: 100%; }
   .find {
     grid-template-columns: 1fr;
   }
-  .story__left { padding: 0 24px 32px; }
-  .story__right { order: -1; }
+  .story__left { padding: 24px 24px 32px; }
+  .story__right { order: -1; border-radius: 0; }
   .story__img { height: 320px; }
 
   .seed { padding: 48px 24px; gap: 32px; }
